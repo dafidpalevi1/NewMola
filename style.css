@@ -40,7 +40,7 @@ p {
 }
 
 .section-p1 {
-    padding: 40px 80px;
+    padding: 40px 10px;
 }
 
 .section-m1 {
@@ -252,29 +252,6 @@ transition: 0.3s ease;
     color: #088178;
     background-color: #fddde4;
 }
-
-/* jenis sale */
-
-.jenis-sale {
-    background-color: #17a2b8;
-  }
-  
-  .jenis-sale p {
-    font-size: 12px;
-    color: #fff;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .wrap-img {
-    border-radius: 12px;
-    width: 100%;
-    height: 50px;
-    position: relative;
-    border: 2px solid #888;
-  }
-  
-/* jenis end */
 
 /* KATEGORY */
 .kategory {
@@ -1390,24 +1367,26 @@ form.sign-in-form {
   /* jenis sale */
 
 .jenis-sale {
-    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #17a2b8;
-    margin-top: 30px;
   }
   
   .jenis-sale p {
     font-size: 14px;
     color: #fff;
+    text-align: center;
   }
+
   .wrap-img {
-    border-radius: 12px;
+    border-radius: 14px;
     width: 50px;
     height: 50px;
     position: relative;
-    border: 1px solid #888;
     padding: 5px;
   }
-  
+
   .wrap-img img {
     width: 100%;
     height: 100%;
@@ -1622,6 +1601,128 @@ form.sign-in-form {
     border-radius: 100px;
     border: none;
   }
+/* sale */
+.sale {
+    background-color: #ffffff;
+    /* padding: 13px; */
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .sale h5 {
+    color: #17a2b8;
+  }
+  
+  .sale span {
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 5px;
+  }
+  
+  .sale .diskon span {
+    background-color: transparent;
+  }
+
+  .diskon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #17a2b8;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .total {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    /* display: flex; */
+  }
+  .text span {
+    background-color: #ffffff;
+    color: #17a2b8;
+    font-size: 20px;
+    padding: 0;
+    font-weight: 400;
+  }
+  
+  .text span:first-child {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .progresss {
+    left: 0;
+    width: 90%;
+    border-radius: 12px;
+    background-color: #8bc1c9;
+    display: flex;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .progress-on {
+    background-color: #17a2b8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75%;
+    z-index: 6;
+    height: 100%;
+  }
+  .progresss span {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    position: relative;
+    z-index: 7;
+    font-weight: 100;
+  }
+  .row-card {
+    height: 250px;
+  }
+  
+  .wrap-img-sale {
+    height: 90px;
+    width: 1000px;
+    display: ;
+  }
+
+  /* sale End */
+  
+  /* jenis sale */
+
+.jenis-sale {
+    background-color: #17a2b8;
+  }
+  
+  .jenis-sale p {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrap-img {
+    width: 100%;
+    height: 50px;
+    position: relative;
+
+  }
+
 }
 /* Start Media Query 799 End*/
 
