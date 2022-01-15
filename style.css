@@ -40,11 +40,11 @@ p {
 }
 
 .section-p1 {
-    padding: 40px 10px;
+    padding: 20px 80px;
 }
 
 .section-m1 {
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 button.normal {
@@ -1356,43 +1356,41 @@ form.sign-in-form {
     border-top: 1px solid #d0d0d0;
     border-right: 1px solid #d0d0d0;
     border-left: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
   }
   
   .card-pencarian span {
     font-size: 14px;
   }
-  
-  
 
-  /* jenis sale */
+  /* jenis sale Desktop */
 
-.jenis-sale {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  .jenis-sale {
+    padding: 20px;
     background-color: #17a2b8;
+    margin-top: 60px;
   }
   
   .jenis-sale p {
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     text-align: center;
   }
-
-  .wrap-img {
-    border-radius: 14px;
+  .wrap-img2 {
+    border-radius: 12px;
     width: 50px;
     height: 50px;
     position: relative;
     padding: 5px;
   }
-
+  
   .wrap-img img {
     width: 100%;
-    height: 100%;
+    height: 50px;
   }
+/* jenis sale end */
 
-  /* rekomendasi */
+/* rekomendasi */
 .nav-link.active {
     border-bottom: 3px solid #17a2b8 !important;
   }
@@ -1568,11 +1566,13 @@ form.sign-in-form {
     }
 
     /* KATEGORY */
-.kategory {
+ .kategory {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
   }
   
   .kategory h5 {
@@ -1581,7 +1581,8 @@ form.sign-in-form {
   }
   
   .kategory p {
-    font-size: 12px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
     color: #280fb4;
     text-align: center;
     padding: 0;
@@ -1591,7 +1592,7 @@ form.sign-in-form {
   .card-kategory {
     width: 100%;
     height: 140px;
-    border: 0px solid #ff0000;
+    border: 0px solid #3700ff;
   }
   
   .card-kategory .wrap-img {
@@ -1601,19 +1602,19 @@ form.sign-in-form {
     border-radius: 100px;
     border: none;
   }
-/* sale */
-.sale {
+ /* sale */
+ .sale {
     background-color: #ffffff;
     /* padding: 13px; */
     flex-direction: column;
     padding-bottom: 20px;
   }
   .sale h5 {
-    color: #17a2b8;
+    color: #fd0000;
   }
   
   .sale span {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: #fff;
     font-weight: bold;
     padding: 0 5px;
@@ -1645,8 +1646,33 @@ form.sign-in-form {
     align-items: center;
   }
 
-  .text {
-    /* display: flex; */
+  /* jenis Menu sale Atas HP */
+
+ .jenis-sale {
+    background-color: #17a2b8;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10px;
+  }
+  
+  .jenis-sale p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .jenis-sale .wrap-img img {
+    width: 110px;
+    height: 90px;
+    padding: 10px 10px 10px 10px;
+  }
+
+}
+/* Start Media Query 799 End*/
+
+.text {
+/* display: flex; */
   }
   .text span {
     background-color: #ffffff;
@@ -1700,31 +1726,10 @@ form.sign-in-form {
     width: 1000px;
     display: ;
   }
-
-  /* sale End */
+ }
+ /* sale End */
   
-  /* jenis sale */
-
-.jenis-sale {
-    background-color: #17a2b8;
-  }
   
-  .jenis-sale p {
-    font-size: 12px;
-    color: #fff;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .wrap-img {
-    width: 100%;
-    height: 50px;
-    position: relative;
-
-  }
-
-}
-/* Start Media Query 799 End*/
 
 @media (max-width: 870px) {
 	.container {
