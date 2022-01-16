@@ -1350,7 +1350,7 @@ form.sign-in-form {
 
   /* sale End */
 
-  /* pencarian populer */
+  /* pencarian populer desktop*/
 .card-pencarian {
     width: 20%;
     border-top: 1px solid #d0d0d0;
@@ -1390,12 +1390,24 @@ form.sign-in-form {
   }
 /* jenis sale end */
 
-/* rekomendasi */
+/* rekomendasi Desktop*/
 .nav-link.active {
     border-bottom: 3px solid #17a2b8 !important;
   }
   .nav-link.active {
     border-bottom: 3px solid #17a2b8; !important;
+  }
+
+  .rekomendasi{
+      width: 100%;
+  }
+
+  .rekomendasi img{
+      width: 100%;
+  }
+
+  .rekomendasi span{
+
   }
 
   .d-flex{
@@ -1666,6 +1678,56 @@ form.sign-in-form {
     width: 108px;
     height: 90px;
     padding: 10px 10px 10px 10px;
+  }
+
+  /* rekomendasi Mobile*/
+.nav-link.active {
+    border-bottom: 3px solid #17a2b8 !important;
+  }
+  .nav-link.active {
+    border-bottom: 3px solid #17a2b8; !important;
+  }
+
+  .rekomendasi {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10px;
+  }
+
+  .rekomendasi .img{
+      width: 100%;
+  }
+
+  .rekomendasi span{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* pencarian populer */
+.card-pencarian {
+    width: 360px;
+    height: 100px;
+    border-top: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+    border-left: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+  }
+  
+  .card-pencarian span {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .card-pencarian img{
+    display: flex;
+    width: 450px;
+    height: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
 }
