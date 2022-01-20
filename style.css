@@ -652,7 +652,7 @@ footer .copyright {
 }
 
 #about-head div{
-  padding-left: 40px;
+  padding-left: 10px;
 }
 
 #about-app h1{
@@ -772,7 +772,7 @@ footer .copyright {
   line-height: 25px;
 }
 
-/* Blog Page */
+/* Page Header */
 #page-header.blog-header{
   background-image: url("img/banner/b1.jpg");
   width: 100%;
@@ -803,8 +803,8 @@ footer .copyright {
 
 #blog img {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 203px;
+  padding-right: 10px;
 }
 
 #blog .blog-details {
@@ -1346,6 +1346,22 @@ form.sign-in-form {
 
 /* jenis sale end */
 
+/* Single Product */
+#prodetails {
+  display: flex;
+  flex-direction: column;
+}
+
+#prodetails .single-pro-image {
+   width: 100%;
+}
+
+#prodetails .single-pro-details {
+   width: 100%;
+}
+
+/* Single Product End */
+
 /* rekomendasi Desktop*/
 .nav-link.active {
   border-bottom: 3px solid #17a2b8 !important;
@@ -1383,7 +1399,6 @@ form.sign-in-form {
 .content {
   position: relative;
   top: 130px;
-  background-color: #e1e1e1;
 }
   
 .content .shape1 {
@@ -1491,7 +1506,7 @@ form.sign-in-form {
   display: flex;
   justify-content: space-between;
   margin: 30px;
-  padding: 80px; border: 1px; solid #e1e1e1;
+  padding: 80px; border: 1px; 
 }
 
 #form-details form{
@@ -1811,7 +1826,6 @@ form.sign-in-form {
  .content {
     position: relative;
     top: 130px;
-    background-color: #e1e1e1;
   }
   
   .content .shape1 {
@@ -2045,39 +2059,6 @@ form.sign-in-form {
 
 }
 
-
-/* Start Media Query 570*/
-@media (max-width: 570px) {
-	form {
-		padding: 0 1.5rem;
-	}
-	
-	.image {
-		display: none;
-	}
-	
-	.panel .content {
-		padding: 0.5rem 1rem;
-	}
-	
-	.container {
-		padding: 1.5rem;
-	}
-	
-	.container:before {
-		bottom: 72%;
-		left: 50%;
-	}
-	
-	.container.sign-up-mode:before {
-		bottom: 28%;
-		left: 50%;
-	}
-    
-}
-
-/* End Media Query 570*/
-
 /* Start Media Query 477*/
 @media (max-width: 477px) {
    .section-p1 {
@@ -2179,45 +2160,32 @@ form.sign-in-form {
    text-align: left;
    padding-left: 0;
   }
-  
-}
 
-/* Versi 477 Mobile End */
+  /*Blog Page */
 
-/* Single Product */
-#prodetails {
-  display: flex;
-  flex-direction: column;
-}
-
-#prodetails .single-pro-image {
-   width: 100%;
-}
-
-#prodetails .single-pro-details {
-   width: 100%;
-}
-
-/* Single Product End */
-
-/*Blog Page */
 #blog{
   padding: 30px 30px 0 30px;
 }
 
 #blog .blog-box{
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#blog .blog-details p{
+  text-align: left;
+  font-size: 16px;
+}
 
 #blog .blog-img {
-  width: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 #blog .blog-img{
-  width: 50%;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   margin-right: 0px;
   margin-bottom: 30px;
 }
@@ -2226,7 +2194,7 @@ form.sign-in-form {
   width: 100%;
 }
 
-/* About Page */
+/* About Page 477 */
 #about-head {
   flex-direction: column;
 }
@@ -2243,4 +2211,139 @@ form.sign-in-form {
 #about-app .video {
   width: 100%;
 }
+
+/* About Page 477 end */
+
+.container {
+  min-height: 800px;
+  height: 100vh;
+}
+
+.signin-signup {
+  width: 100%;
+  top: 95%;
+  transform: translate(-50%, -100%);
+  transition: 1s 0.8s ease-in-out;
+}
+
+.signin-signup .sign-in-form .login{
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 280px;
+}
+
+.signin-signup,
+.container.sign-up-mode .signin-signup {
+  left: 50%;
+}
+
+.panels-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.panel {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.5rem 8%;
+  grid-column: 1 / 2;
+}
+
+.right-panel {
+  grid-row: 3 / 4;
+}
+
+.image {
+  width: 200px;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+.panel .content {
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.8s;
+}
+
+.panel h3 {
+  font-size: 1.2rem;
+}
+
+.panel p {
+  font-size: 0.7rem;
+  padding: 0.5rem 0;
+}
+
+.btn.transparent {
+  width: 110px;
+  height: 35px;
+  font-size: 0.7rem;
+}
+
+.container:before {
+  width: 1500px;
+  height: 1500px;
+  transform: translateX(-50%);
+  left: 30%;
+  bottom: 68%;
+  right: initial;
+  top: initial;
+  transition: 2s ease-in-out;
+}
+
+.container.sign-up-mode:before {
+  transform: translate(-50%, 100%);
+  bottom: 32%;
+  right: initial;
+}
+
+.container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .content {
+  transform: translateY(-300px);
+}
+
+.container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .content {
+ transform: translateY(0px);
+}
+
+.right-panel .image,
+.right-panel .content {
+ transform: translateY(300px);
+}
+
+.container.sign-up-mode .signin-signup {
+ top: 5%;
+ transform: translate(-50%, 0);
+}
+
+form {
+  padding: 0 1.5rem;
+}
+
+.image {
+  display: none;
+}
+
+
+.container {
+  padding: 1.5rem;
+}
+
+.container:before {
+  bottom: 72%;
+  left: 50%;
+}
+
+.container.sign-up-mode:before {
+  bottom: 28%;
+  left: 50%;
+}
+  
+}
+
+/* Versi 477 Mobile End */
+
+
 
