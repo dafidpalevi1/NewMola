@@ -35,16 +35,16 @@ h6 {
 
 p {
     font-size: 16px;
-    color: #17a2b8;
+    color: #000000;
     margin: 15px 0 20px 0;
 }
 
 .section-p1 {
-    padding: 10px 40px;
+    padding: 10px 60px;
 }
 
 .section-m1 {
-    margin: 20px 0;
+    margin: 10px 10px;
 }
 
 button.normal {
@@ -163,7 +163,7 @@ body {
 
 /* Home Page */
 #hero{
-  background-image: url(img/hero4.png);
+  background-image: url(img/baruku.jpg);
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -258,6 +258,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
+  padding: 0;
 }
   
 .kategory h5 {
@@ -273,7 +274,7 @@ body {
 }
   
 .card-kategory {
-  padding: 10px 10px;
+  padding: 20px 10px;
   margin-bottom: 0;
   width: 100%;
   height: 120px;
@@ -399,7 +400,7 @@ body {
 }
 
 #banner h2 {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   padding: 10px 0;
 }
@@ -1047,7 +1048,7 @@ form.sign-in-form {
 .panel p {
 	font-size: 0.95rem;
 	padding: 0.7rem 0;
-  color: #ffffff;
+  color: #000000;
 }
 
 .btn.transparent {
@@ -1239,7 +1240,7 @@ form.sign-in-form {
 }
 
 .text span {
-  background-color: #ffffff;
+  background-color: #000000;
   color: #17a2b8;
   font-size: 20px;
   padding: 0;
@@ -1276,7 +1277,7 @@ form.sign-in-form {
 
 .progresss span {
   background-color: transparent;
-  color: #ffffff;
+  color: #000000;
   font-size: 12px;
   position: relative;
   z-index: 7;
@@ -1289,8 +1290,8 @@ form.sign-in-form {
 }
   
 .wrap-img-sale {
-  height: 70%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   position: relative;
 }
 
@@ -1320,7 +1321,7 @@ form.sign-in-form {
 /* jenis sale Desktop */
 
 .jenis-sale {
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff;
 }
   
@@ -1498,6 +1499,7 @@ form.sign-in-form {
  display: flex;
  flex-direction: column;
  align-items: flex-start;
+ color: #000;
 }
 
 #form-details form input,
@@ -1876,7 +1878,7 @@ form.sign-in-form {
 
 .text span {
     background-color: #ffffff;
-    color: #17a2b8;
+    color: #000000;
     font-size: 20px;
     padding: 0;
     font-weight: 400;
@@ -1912,7 +1914,7 @@ form.sign-in-form {
 
   .progresss span {
     background-color: transparent;
-    color: #ffffff;
+    color: #000000;
     font-size: 12px;
     position: relative;
     z-index: 7;
@@ -2079,11 +2081,11 @@ form.sign-in-form {
 /* Start Media Query 477*/
 @media (max-width: 477px) {
    .section-p1 {
-   padding: 10px;
+   padding: 0;
   }
 
   #header {
-   padding: 10px 15px;
+   padding: 2px 2px;
   }
 
   h1 {
@@ -2095,8 +2097,8 @@ form.sign-in-form {
   }
 
   #hero {
-   padding 0 20px;
-   background-position: 55%;
+   background-position: 100%;
+   margin-bottom: 10px;
   }
 
   #feature {
@@ -2170,7 +2172,14 @@ form.sign-in-form {
    margin-bottom: 70px;
    padding-bottom: 30px;
   }
- 
+
+  #hero h2 {
+   color: #f10606;
+   width: 100%;
+   text-align: left;
+   padding-left: 0;
+  }
+  
 }
 
 /* Versi 477 Mobile End */
